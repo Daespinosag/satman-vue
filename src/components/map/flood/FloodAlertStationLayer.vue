@@ -34,6 +34,7 @@
                 stationAlertType: 'overlay',
 
                 polygonAlertName : 'kml_', // + this.specificAlert.name,
+                polygonAlertVisible: true,
                 polygonAlertType: 'overlay',
 
                 polygonColor: '#000',
@@ -46,8 +47,7 @@
             },
             basin(){
                 return Basin.query().where('id',this.specificAlert.basin_id).first()
-            }                polygonAlertVisible: false,
-
+            }
         }
     }
 </script>
